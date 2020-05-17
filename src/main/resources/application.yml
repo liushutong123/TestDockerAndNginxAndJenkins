@@ -1,0 +1,28 @@
+server:
+  port: 10223
+spring:
+  redis:
+    database: 8
+    host: 111.229.174.170
+    port: 6379
+    password: root
+    lettuce:
+      pool:
+        max-active: 200
+        max-idle: 20
+        min-idle: 0
+        max-wait: -1ms
+    timeout: 2000ms
+  datasource:
+    url: jdbc:mysql://111.229.174.170:3306/mercury?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  main:
+    #当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true
+mybatis-plus:
+  mapper-locations: classpath:com/bs/gas/api/mapper/xml/**.xml
+  type-aliases-package: com.bs.gas.api.entity
+swagger:
+  swagger-open: true                #是否开启swagger (true/false)
