@@ -18,7 +18,7 @@
         <mybatis_plus.version>3.0.1</mybatis_plus.version>
         <pool2.version>1.8</pool2.version>
         <swagger.version>2.9.2</swagger.version>
-        <shiro.version>1.5.3</shiro.version>
+        <shiro.version>1.6.0</shiro.version>
     </properties>
 
     <dependencies>
